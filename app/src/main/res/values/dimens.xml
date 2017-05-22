@@ -3,4 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="xian">0.2dp</dimen>
+    <!--说明文字-->
+    <dimen name="size_middle">12sp</dimen>
 </resources>
