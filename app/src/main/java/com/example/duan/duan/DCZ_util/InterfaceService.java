@@ -1,6 +1,7 @@
 package com.example.duan.duan.DCZ_util;
 
 
+import com.example.duan.duan.DCZ_bean.NewsBean;
 import com.example.duan.duan.DCZ_bean.StatusBean;
 
 import okhttp3.RequestBody;
@@ -23,5 +24,12 @@ public interface InterfaceService {
     @FormUrlEncoded
     @POST("sms/code")
     Call<StatusBean> jiekou(@Field("mobile") String string);
+
+    /**
+     * 资讯列表
+     * */
+    @FormUrlEncoded
+    @POST("https://api.bincrea.com/app/info/getInfoList.do")
+    Call<NewsBean> getNews(@Field("searchKey") String key, @Field("pageNumber") int number, @Field("pageSize") int size);
 
 }

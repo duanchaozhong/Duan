@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Duan</string>
+    <string name="app_name">APP</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">你好</string>
     <string name="loaddings">努力加载...</string>
 </resources>

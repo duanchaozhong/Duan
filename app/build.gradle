@@ -19,6 +19,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    //APK打包过程中出现Error:"app_name" is not translated in "zh" (Chinese)[Missing Translation]就添加
+    lintOptions {
+      //  disable 'InvalidPackage'
+        //只要添加下面这一句就可以了
+        disable 'MissingTranslation'
+    }
 }
 
 dependencies {
@@ -26,14 +33,18 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
-    //图片加载神器
+    //上拉与下拉加载view
+    compile project(':xrecyclerview')
+    //TabLayout
+    compile project(path: ':FlycoTabLayout_Lib')
     //百分比布局
-    //网络框架
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //图片加载神器
     compile 'com.facebook.fresco:fresco:0.5.2'
+
     compile 'com.android.support:percent:25.3.1'
+    //网络框架
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'

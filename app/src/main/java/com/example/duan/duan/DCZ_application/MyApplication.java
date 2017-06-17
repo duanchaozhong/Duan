@@ -11,6 +11,7 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 
 public class MyApplication extends Application{
     private static Context context;
+    public static String qiniu="https://pic.bincrea.com/";
     @Override
     public void onCreate() {
         super.onCreate();
