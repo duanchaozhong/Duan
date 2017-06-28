@@ -25,7 +25,7 @@ import com.example.duan.duan.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WelcomeActivity extends Activity implements ViewPager.OnPageChangeListener {
+public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
     //引导图片资源
     private static final int[] pics = {R.mipmap.bg01,R.mipmap.bg01,R.mipmap.bg01, R.mipmap.bg01,};
     //底部小点图片
