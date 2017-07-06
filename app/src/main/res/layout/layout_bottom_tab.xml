@@ -119,40 +119,6 @@
                         android:textSize="12dp" />
                 </RelativeLayout>
             </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/rl3"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onTabClicked"
-                android:padding="3dp">
-            <RelativeLayout
-                android:id="@+id/rl4"
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="2dp">
-                <ImageView
-                    android:id="@+id/iv3"
-                    android:layout_width="23dp"
-                    android:layout_height="22dp"
-                    android:layout_centerHorizontal="true"
-                    android:focusable="false"
-                    android:scaleType="fitCenter"
-                    android:background="@mipmap/t3" />
-                <TextView
-                    android:id="@+id/tv3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/iv3"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="3dp"
-                    android:text="我的"
-                    android:textColor="@color/text02"
-                    android:textSize="12dp" />
-            </RelativeLayout>
-            </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

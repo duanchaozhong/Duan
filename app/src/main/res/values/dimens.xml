@@ -5,4 +5,7 @@
     <dimen name="xian">0.2dp</dimen>
     <!--说明文字-->
     <dimen name="size_middle">12sp</dimen>
+
+    <!--标题-->
+    <dimen name="title">14sp</dimen>
 </resources>

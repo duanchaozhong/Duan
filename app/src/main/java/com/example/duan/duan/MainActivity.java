@@ -13,7 +13,6 @@ import com.example.duan.duan.DCZ_adapter.MyMainAdapter;
 import com.example.duan.duan.DCZ_fragment.AFragment;
 import com.example.duan.duan.DCZ_fragment.BFragment;
 import com.example.duan.duan.DCZ_fragment.CFragment;
-import com.example.duan.duan.DCZ_fragment.DFragment;
 
 import java.util.ArrayList;
 
@@ -28,7 +27,6 @@ public class MainActivity extends FragmentActivity {
     private RelativeLayout r1;
     private RelativeLayout r2;
     private RelativeLayout r3;
-    private RelativeLayout r4;
     private int selectedItem;                           //当前显示的item
 
     @Override
@@ -46,7 +44,6 @@ public class MainActivity extends FragmentActivity {
         list.add(new AFragment());
         list.add(new BFragment());
         list.add(new CFragment());
-        list.add(new DFragment());
         adapter = new MyMainAdapter(getSupportFragmentManager(), list);
         vp.setOffscreenPageLimit(list.size());                        //设置幕后item的缓存数目
         vp.setAdapter(adapter);                             //给ViewPage设置适配器
@@ -59,7 +56,7 @@ public class MainActivity extends FragmentActivity {
             public void onPageSelected(int position) {
                 int count = ivs.length;
                 for (int i = 0; i < count; i++) {
-                    if (position != 4 || i != 0) {
+                    if (position != 3 || i != 0) {
                         ivs[(position + i) % count].setBackgroundResource(getResources().getIdentifier("t" + (position + i) % count + (i == 0 ? "r" : ""), "mipmap", INSTANCE.getPackageName()));
                         tvs[i].setTextColor(getResources().getColor((R.color.text04)));
                     } else {
@@ -81,10 +78,9 @@ public class MainActivity extends FragmentActivity {
         r1=(RelativeLayout)findViewById(R.id.rl0);
         r2=(RelativeLayout)findViewById(R.id.rl1);
         r3=(RelativeLayout)findViewById(R.id.rl2);
-        r4=(RelativeLayout)findViewById(R.id.rl3);
 
-        ivs = new ImageView[]{(ImageView) findViewById(R.id.iv0),  (ImageView) findViewById(R.id.iv1),(ImageView) findViewById(R.id.iv2), (ImageView) findViewById(R.id.iv3)};
-        tvs = new TextView[]{(TextView) findViewById(R.id.tv0),  (TextView) findViewById(R.id.tv1),(TextView) findViewById(R.id.tv2), (TextView) findViewById(R.id.tv3)};
+        ivs = new ImageView[]{(ImageView) findViewById(R.id.iv0),(ImageView) findViewById(R.id.iv1),(ImageView) findViewById(R.id.iv2)};
+        tvs = new TextView[]{(TextView) findViewById(R.id.tv0),(TextView) findViewById(R.id.tv1),(TextView) findViewById(R.id.tv2)};
     }
 
     private void setListener() {
@@ -105,9 +101,6 @@ public class MainActivity extends FragmentActivity {
                 break;
             case R.id.rl2:
                 setSelectedItem(2);
-                break;
-            case R.id.rl3:
-                setSelectedItem(3);
                 break;
         }
     }

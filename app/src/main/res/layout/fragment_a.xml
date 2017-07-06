@@ -1,11 +1,27 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.duan.duan.DCZ_fragment.AFragment">
     <com.jcodecraeer.xrecyclerview.XRecyclerView
         android:id="@+id/listview"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </com.jcodecraeer.xrecyclerview.XRecyclerView>
-</FrameLayout>
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/bg_title">
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账户安全管家"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title" />
+    </RelativeLayout>
+</LinearLayout>
