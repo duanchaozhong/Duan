@@ -19,8 +19,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DCZ_activity.WelcomeActivity"></activity>
-        <activity android:name=".DCZ_activity.LoginActivity"></activity>
+        <activity android:name=".DCZ_activity.WelcomeActivity" />
+        <activity android:name=".DCZ_activity.LoginActivity" />
+        <activity android:name=".DCZ_activity.EncryptedActivity" />
+        <activity android:name=".DCZ_activity.FootprintsActivity" />
+        <activity android:name=".DCZ_activity.CurrentPhoneActivity" />
+        <activity android:name=".DCZ_activity.ChangePhone1Activity" />
+        <activity android:name=".DCZ_activity.ChangePhone2Activity" />
+        <activity android:name=".DCZ_activity.ChangePhone3Activity" />
+        <activity android:name=".DCZ_activity.ChangePhone4Activity" />
+        <activity android:name=".DCZ_activity.ChangeLoginPasswordActivity" />
+        <activity android:name=".DCZ_activity.ChangePayPasswordActivity" />
+        <activity android:name=".DCZ_activity.SecurityProtectActivity" />
+        <activity android:name=".DCZ_activity.ScanActivity" />
+        <activity android:name=".DCZ_activity.WalletProtectActivity" />
+        <activity android:name=".DCZ_activity.ShopProtectActivity" />
+        <activity android:name=".DCZ_activity.ChangeProtectActivity"></activity>
     </application>
 
 </manifest>

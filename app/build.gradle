@@ -39,7 +39,6 @@ dependencies {
     compile project(path: ':FlycoTabLayout_Lib')
     //百分比布局
     //图片加载神器
-    
 
     //网络框架
     //butterknife框架

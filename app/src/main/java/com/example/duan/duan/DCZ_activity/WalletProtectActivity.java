@@ -4,18 +4,19 @@ import android.os.Bundle;
 
 import com.example.duan.duan.R;
 /**
- *  登录界面
+ *  钱包保护
  *
- **/
-public class LoginActivity extends BaseActivity {
+ * */
+public class WalletProtectActivity extends BaseActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_wallet_protect);
         setViews();
         setListener();
     }
+
     /**
      *  数据初始化
      * */

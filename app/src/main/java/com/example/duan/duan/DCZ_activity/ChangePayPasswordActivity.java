@@ -4,18 +4,19 @@ import android.os.Bundle;
 
 import com.example.duan.duan.R;
 /**
- *  登录界面
+ *  修改支付密码
  *
- **/
-public class LoginActivity extends BaseActivity {
+ * */
+public class ChangePayPasswordActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_change_pay_password);
         setViews();
         setListener();
     }
+
     /**
      *  数据初始化
      * */

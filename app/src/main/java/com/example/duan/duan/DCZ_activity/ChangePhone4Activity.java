@@ -1,21 +1,22 @@
 package com.example.duan.duan.DCZ_activity;
 
 import android.os.Bundle;
-
-import com.example.duan.duan.R;
 /**
- *  登录界面
+ *  验证密保手机
  *
- **/
-public class LoginActivity extends BaseActivity {
+ * */
+import com.example.duan.duan.R;
+
+public class ChangePhone4Activity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_change_phone4);
         setViews();
         setListener();
     }
+
     /**
      *  数据初始化
      * */

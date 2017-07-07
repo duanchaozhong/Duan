@@ -4,18 +4,20 @@ import android.os.Bundle;
 
 import com.example.duan.duan.R;
 /**
- *  登录界面
+ *  当前密保手机
  *
- **/
-public class LoginActivity extends BaseActivity {
+ * */
+public class CurrentPhoneActivity extends BaseActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_current_phone);
         setViews();
         setListener();
     }
+
+
     /**
      *  数据初始化
      * */
