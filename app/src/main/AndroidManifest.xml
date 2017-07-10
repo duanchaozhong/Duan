@@ -34,7 +34,15 @@
         <activity android:name=".DCZ_activity.ScanActivity" />
         <activity android:name=".DCZ_activity.WalletProtectActivity" />
         <activity android:name=".DCZ_activity.ShopProtectActivity" />
-        <activity android:name=".DCZ_activity.ChangeProtectActivity"></activity>
+        <activity android:name=".DCZ_activity.ChangeProtectActivity" />
+        <activity android:name=".DCZ_activity.GameProtectActivity" />
+        <activity android:name=".DCZ_activity.OperationRecordActivity" />
+        <activity android:name=".DCZ_activity.EquipmentManageActivity" />
+        <activity android:name=".DCZ_activity.GesturesLockActivity" />
+        <activity android:name=".DCZ_activity.FingerprinProtectActivity" />
+        <activity android:name=".DCZ_activity.FaceKnowActivity" />
+        <activity android:name=".DCZ_activity.FaceCollectActivity" />
+        <activity android:name=".DCZ_activity.HaveActivity"></activity>
     </application>
 
 </manifest>
