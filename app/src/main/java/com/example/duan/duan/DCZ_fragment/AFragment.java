@@ -28,7 +28,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
+/**
+ *  账户安全管家
+ *
+ * */
 
 public class AFragment extends Fragment {
     private List<NewsBean.DataBean.ListBean> list=new ArrayList<>();

@@ -10,7 +10,10 @@ import android.view.ViewGroup;
 
 import com.example.duan.duan.R;
 
-
+/**
+ *  发现
+ *
+ * */
 public class CFragment extends Fragment {
     private View view;
 

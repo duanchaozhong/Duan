@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.duan.duan.DCZ_activity.LoginActivity">
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/colorPrimaryDark">
+        android:background="@color/bg_title">
         <include
             android:id="@+id/back"
             layout="@layout/layout_back" />
@@ -17,5 +18,24 @@
             android:text="登录"
             android:textColor="@color/white"
             android:textSize="@dimen/title" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="找回密码"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 </LinearLayout>

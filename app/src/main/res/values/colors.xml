@@ -4,6 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#33019285</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#019285</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
     <color name="alpha">#000000</color>
     <color name="text01">#333333</color>
     <color name="text02">#999999</color>
@@ -13,4 +21,5 @@
     <color name="xian1">#b2b2b2</color>
     <color name="white">#FFFFFF</color>
     <color name="bg_title">#333333</color>
+    <color name="bg1">#e4e4e4</color>
 </resources>

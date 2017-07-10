@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.duan.duan.DCZ_activity.WalletProtectActivity">
     <RelativeLayout
         style="@style/Title"
@@ -17,5 +20,63 @@
             android:text="钱包保护"
             android:textColor="@color/white"
             android:textSize="@dimen/title" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="开启保护后账户才可以正常验证登录和支付，有效保护账户资金安全"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="钱包登录"/>
+        <com.example.duan.duan.DCZ_selft.SwitchButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:kswTextOff="Off"
+            app:kswTextOn="On"
+            app:kswTintColor="@color/text_lv"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            android:textColor="@color/custom_text_state_color"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="钱包支付"/>
+        <com.example.duan.duan.DCZ_selft.SwitchButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:kswTextOff="Off"
+            app:kswTextOn="On"
+            app:kswTintColor="@color/text_lv"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            android:textColor="@color/custom_text_state_color"
+            android:textSize="16dp"/>
     </RelativeLayout>
 </LinearLayout>
