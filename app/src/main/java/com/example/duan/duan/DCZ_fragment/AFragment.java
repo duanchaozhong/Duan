@@ -9,12 +9,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.duan.duan.DCZ_adapter.NewsAdapter;
 import com.example.duan.duan.DCZ_bean.NewsBean;
 import com.example.duan.duan.DCZ_util.DialogUtil;
 import com.example.duan.duan.DCZ_util.HttpServiceClient;
+import com.example.duan.duan.DCZ_util.StatusBarUtil;
 import com.example.duan.duan.R;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
@@ -47,6 +50,7 @@ public class AFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        StatusBarUtil.setImgTransparent(getActivity());      //这行是让标题沉浸
         view = View.inflate(getActivity(), R.layout.fragment_a, null);
         ButterKnife.bind(this, view);
         INSTANCE=this;

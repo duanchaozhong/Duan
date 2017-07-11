@@ -13,9 +13,19 @@
     <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
     <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
 
+    <dimen name="horizontal_corner">10dp</dimen>
+    <dimen name="percent_text_size_large">12sp</dimen>
+
+    <dimen name="left">20dp</dimen>
+    <dimen name="right">15dp</dimen>
+
     <!--说明文字-->
     <dimen name="size_middle">12sp</dimen>
 
     <!--标题-->
-    <dimen name="title">18sp</dimen>
+    <dimen name="title">17sp</dimen>
+    <!--列表项标题-->
+    <dimen name="text01">15sp</dimen>
+    <!--列表项内容-->
+    <dimen name="text02">13sp</dimen>
 </resources>

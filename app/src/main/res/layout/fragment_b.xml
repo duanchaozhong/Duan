@@ -1,10 +1,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg1"
     tools:context="com.example.duan.duan.DCZ_fragment.BFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/bg_title"/>
     <RelativeLayout
         style="@style/Title"
         android:background="@color/bg_title">
@@ -16,280 +21,453 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="安全中心"
-            android:textColor="@color/white"
+            android:textColor="@color/title"
             android:textSize="@dimen/title" />
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:padding="10dp"
             android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanjiaobai"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:textColor="@color/text05"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanjiaobai"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="8"
+                        android:textColor="@color/text05"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanjiaobai"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:textColor="@color/text05"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanjiaobai"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:text="4"
+                        android:textColor="@color/text05"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanjiaobai"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:text="7"
+                        android:textColor="@color/text05"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanjiaobai"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textColor="@color/text05"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <com.example.duan.duan.DCZ_selft.CBProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_horizontal"
+                    cb:isHorizonStroke="true"
+                    cb:orientation="horizontal"
+                    cb:percent_text_color="@color/percent_text_color_2"
+                    cb:percent_text_size="0dp"
+                    cb:progressBarBgColor="@color/progressbar_bg_color_1"
+                    cb:progressColor="@color/progress_color_1"
+                    cb:rect_round="@dimen/horizontal_corner" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/t0r"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/text07"
+                    android:text="扫码验证"/>
+            </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg2"
+                android:textColor="@color/text06"
+                android:padding="10dp"
+                android:text="账户保护" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text05"
+                        android:text="钱包保护" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
+                        android:layout_marginTop="5dp"
+                        android:text="商城保护" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
+                        android:layout_marginTop="5dp"
+                        android:text="兑换保护" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
+                        android:layout_marginTop="5dp"
+                        android:text="游戏保护" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
-            android:orientation="vertical"
+            android:layout_weight="1.5"
             android:background="@color/white"
-            android:layout_weight="1.5">
+            android:orientation="vertical">
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/bg2"
                 android:padding="10dp"
-                android:text="账户保护"/>
+                android:text="账户管理" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="15dp">
+                android:layout_height="match_parent">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:text="安全手机" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:textColor="@color/text05"
+                        android:text="一键锁号" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:text="设置密码" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:text="安全邮箱" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
-            android:orientation="vertical"
+            android:layout_weight="1.5"
             android:background="@color/white"
-            android:layout_weight="1.5">
+            android:orientation="vertical">
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/bg2"
                 android:padding="10dp"
-                android:text="账户管理"/>
+                android:text="账户历史" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="15dp">
+                android:layout_height="match_parent">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:text="我的足迹" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:text="操作记录" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:textColor="@color/text05"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:text="设备管理" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
+                        android:id="@+id/imageView2"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@mipmap/ic_launcher" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
+                        android:text="钱包保护" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            android:background="@color/white"
-            android:layout_weight="1.5">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="账户历史"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="15dp">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:orientation="vertical"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="5dp"
-                        android:text="钱包保护"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.7">
-        </View>
+            android:layout_weight="0.7"></View>
     </LinearLayout>
 </LinearLayout>

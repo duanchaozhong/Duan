@@ -44,6 +44,7 @@
                         android:background="@mipmap/t0r" />
                     <TextView
                         android:id="@+id/tv0"
+                        android:visibility="gone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/iv0"
@@ -78,6 +79,7 @@
                         android:id="@+id/tv1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         android:layout_below="@id/iv1"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="3dp"
@@ -111,6 +113,7 @@
                         android:id="@+id/tv2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         android:layout_below="@id/iv2"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="3dp"
