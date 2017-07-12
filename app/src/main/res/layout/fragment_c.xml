@@ -8,10 +8,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/bg_title"/>
+        android:background="@color/text07"/>
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/bg_title">
+        android:background="@color/text07">
         <include
             android:id="@+id/back"
             layout="@layout/layout_back" />
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="发现"
-            android:textColor="@color/title"
+            android:textColor="@color/white"
             android:textSize="@dimen/title" />
     </RelativeLayout>
     <LinearLayout

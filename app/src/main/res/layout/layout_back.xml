@@ -12,5 +12,5 @@
         android:layout_height="30dp"
         android:src="@mipmap/ic_launcher_round"
         android:scaleType="fitCenter"
-        android:layout_marginLeft="@dimen/left"/>
+        android:layout_marginLeft="10dp"/>
 </LinearLayout>

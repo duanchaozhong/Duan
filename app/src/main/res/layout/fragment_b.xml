@@ -9,19 +9,22 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/bg_title"/>
+        android:background="@color/text07"/>
+
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/bg_title">
+        android:background="@color/text07">
+
         <include
             android:id="@+id/back"
             layout="@layout/layout_back" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="安全中心"
-            android:textColor="@color/title"
+            android:textColor="@color/white"
             android:textSize="@dimen/title" />
     </RelativeLayout>
 
@@ -131,9 +134,12 @@
                     cb:rect_round="@dimen/horizontal_corner" />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/scan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:gravity="center"
                 android:orientation="vertical">
                 <ImageView
@@ -144,6 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:textSize="@dimen/text02"
                     android:textColor="@color/text07"
                     android:text="扫码验证"/>
             </LinearLayout>
@@ -161,6 +168,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/bg2"
                 android:textColor="@color/text06"
+                android:textSize="@dimen/text01"
                 android:padding="10dp"
                 android:text="账户保护" />
 
@@ -169,6 +177,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/ll1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -176,6 +185,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/imageView3"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@mipmap/ic_launcher" />
@@ -185,11 +195,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_marginTop="5dp"
+                        android:textSize="@dimen/text01"
                         android:textColor="@color/text05"
                         android:text="钱包保护" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -206,11 +218,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="商城保护" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll3"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -227,11 +241,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="兑换保护" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll4"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -248,6 +264,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="游戏保护" />
                 </LinearLayout>
@@ -266,6 +283,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/bg2"
+                android:textSize="@dimen/text01"
                 android:padding="10dp"
                 android:text="账户管理" />
 
@@ -274,6 +292,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/ll5"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -290,11 +309,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="安全手机" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll6"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -311,11 +332,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_marginTop="5dp"
-                        android:textColor="@color/text05"
-                        android:text="一键锁号" />
+                        android:textSize="@dimen/text01"
+                        android:text="一键锁号"
+                        android:textColor="@color/text05" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll7"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -332,11 +355,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="设置密码" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll8"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -353,6 +378,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="安全邮箱" />
                 </LinearLayout>
@@ -371,6 +397,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/bg2"
+                android:textSize="@dimen/text01"
                 android:padding="10dp"
                 android:text="账户历史" />
 
@@ -379,6 +406,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/ll9"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -395,11 +423,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="我的足迹" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll10"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -416,11 +446,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="操作记录" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll11"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -437,6 +469,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:textColor="@color/text05"
+                        android:textSize="@dimen/text01"
                         android:layout_marginTop="5dp"
                         android:text="设备管理" />
                 </LinearLayout>

@@ -6,7 +6,10 @@ import android.os.Bundle;
  *
  * */
 import com.example.duan.duan.R;
-
+/**
+ *  验证新的密保手机
+ *
+ * */
 public class ChangePhone4Activity extends BaseActivity {
 
     @Override

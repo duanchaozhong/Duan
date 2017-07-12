@@ -1,19 +1,27 @@
 package com.example.duan.duan.DCZ_activity;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.duan.duan.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  *  兑换保护
  *
  * */
-public class ChangeProtectActivity extends AppCompatActivity {
-
+public class ChangeProtectActivity extends Activity {
+    @BindView(R.id.back)
+    View back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_protect);
+        ButterKnife.bind(this);
         setViews();
         setListener();
     }
@@ -29,6 +37,11 @@ public class ChangeProtectActivity extends AppCompatActivity {
      *
      * */
     private void setListener() {
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

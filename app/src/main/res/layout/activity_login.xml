@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.duan.duan.DCZ_activity.LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/bg_title"/>
     <RelativeLayout
         style="@style/Title"
         android:background="@color/bg_title">
@@ -16,8 +20,13 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="登录"
-            android:textColor="@color/white"
+            android:textColor="@color/text_title"
             android:textSize="@dimen/title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xian"
+            android:background="@color/xian1"
+            android:layout_alignParentBottom="true"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"

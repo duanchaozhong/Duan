@@ -1,18 +1,25 @@
 package com.example.duan.duan.DCZ_activity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.duan.duan.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  *  兑换保护
  *
  * */
 public class ShopProtectActivity extends BaseActivity {
-
+    @BindView(R.id.back)
+    View back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_protect);
+        ButterKnife.bind(this);
         setViews();
         setListener();
     }
@@ -29,6 +36,11 @@ public class ShopProtectActivity extends BaseActivity {
      *
      * */
     private void setListener() {
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

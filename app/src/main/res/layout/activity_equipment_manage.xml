@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.duan.duan.DCZ_activity.EquipmentManageActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/bg_title"/>
     <RelativeLayout
         style="@style/Title"
         android:background="@color/bg_title">
@@ -16,7 +20,25 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="设备管理"
-            android:textColor="@color/white"
+            android:textColor="@color/text_title"
             android:textSize="@dimen/title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xian"
+            android:background="@color/xian1"
+            android:layout_alignParentBottom="true"/>
     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text01"
+        android:textColor="@color/text06"
+        android:text="暂无授权设备"
+        android:paddingLeft="@dimen/left"/>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
 </LinearLayout>

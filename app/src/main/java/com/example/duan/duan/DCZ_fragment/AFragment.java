@@ -1,6 +1,7 @@
 package com.example.duan.duan.DCZ_fragment;
 
 import android.app.Dialog;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,16 +10,19 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import com.example.duan.duan.DCZ_adapter.NewsAdapter;
 import com.example.duan.duan.DCZ_bean.NewsBean;
 import com.example.duan.duan.DCZ_util.DialogUtil;
 import com.example.duan.duan.DCZ_util.HttpServiceClient;
 import com.example.duan.duan.DCZ_util.StatusBarUtil;
 import com.example.duan.duan.R;
+import com.facebook.drawee.view.SimpleDraweeView;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
@@ -60,7 +64,14 @@ public class AFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-       // getData();
+        SimpleDraweeView iv= (SimpleDraweeView) view.findViewById(R.id.iv);
+       // int resource = R.mipmap.gif;
+       // Glide.with(this).load(resource).placeholder(resource).into(iv);
+       // Glide.with(this).load(resource).into(new GlideDrawableImageViewTarget(iv, 5));
+      //  Glide.with(this).load(resource).asGif().placeholder(resource).diskCacheStrategy(DiskCacheStrategy.SOURCE).into(iv);
+      //  Uri uri = Uri.parse("res://"+getActivity().getPackageName()+"/" + R.mipmap.gif);
+        iv.setImageResource(R.mipmap.gif);
+        // getData();
     }
 
     /**
@@ -82,34 +93,11 @@ public class AFragment extends Fragment {
     }
 
     private void setViews() {
-        if(adapter!=null){
-            lv.loadMoreComplete();
-            adapter.notify(list);
-        }else {
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(INSTANCE.getActivity());
-            linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-            lv.setLayoutManager(linearLayoutManager);
-            lv.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);
-            lv.setLoadingMoreProgressStyle(ProgressStyle.BallRotate);
-            lv.setArrowImageView(R.mipmap.ic_launcher);
-            //lv.addItemDecoration(new SpacesItemDecoration(20));
-            adapter=new NewsAdapter(getActivity(),list);
-            lv.setAdapter(adapter);
-        }
+
     }
 
     private void setListener() {
-        lv.setLoadingListener(new XRecyclerView.LoadingListener() {
-            @Override
-            public void onRefresh() {
-                lv.refreshComplete();
-            }
 
-            @Override
-            public void onLoadMore() {
-                lv.refreshComplete();
-            }
-        });
     }
 
     /***
