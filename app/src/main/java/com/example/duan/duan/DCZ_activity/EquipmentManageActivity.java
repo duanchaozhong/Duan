@@ -98,7 +98,7 @@ public class EquipmentManageActivity extends BaseActivity {
      * 调取接口拿到服务器数据
      * */
     public void getData(){
-        dialog= DialogUtil.createLoadingDialog(this,getString(R.string.loaddings));
+        dialog= DialogUtil.createLoadingDialog(this,getString(R.string.loaddings),null);
         dialog.show();
         HttpServiceClient.getInstance().getNews("",pageNumber,pageSize).enqueue(new Callback<NewsBean>() {
             @Override

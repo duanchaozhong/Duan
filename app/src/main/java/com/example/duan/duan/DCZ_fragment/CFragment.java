@@ -1,5 +1,6 @@
 package com.example.duan.duan.DCZ_fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -7,7 +8,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
+import com.example.duan.duan.DCZ_activity.LoginActivity;
 import com.example.duan.duan.R;
 
 /**
@@ -16,7 +19,7 @@ import com.example.duan.duan.R;
  * */
 public class CFragment extends Fragment {
     private View view;
-
+    private LinearLayout ll1;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -50,10 +53,16 @@ public class CFragment extends Fragment {
     }
 
     private void setViews() {
-
+        ll1=(LinearLayout)view.findViewById(R.id.ll1);
     }
 
     private void setListener() {
-
+        ll1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

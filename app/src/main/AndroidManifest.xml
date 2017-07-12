@@ -65,7 +65,8 @@
         <activity android:name=".DCZ_activity.FaceCollectActivity" />
         <activity android:name=".DCZ_activity.HaveActivity" />
         <activity android:name=".DCZ_activity.ChangePhoneActivity" />
-        <activity android:name=".DCZ_activity.SettingPasswordActivity"></activity>
+        <activity android:name=".DCZ_activity.SettingPasswordActivity" />
+        <activity android:name=".DCZ_activity.PhoneProveActivity"></activity>
     </application>
 
 </manifest>

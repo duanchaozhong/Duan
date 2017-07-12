@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:oneshot="false">  
+    <item android:drawable="@mipmap/sao1" android:duration="30"/>
+    <item android:drawable="@mipmap/sao2" android:duration="30"/>
+    <item android:drawable="@mipmap/sao3" android:duration="30"/>
+   <!-- <item android:drawable="@mipmap/sao4" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao5" android:duration="30"/>
+    <item android:drawable="@mipmap/sao6" android:duration="30"/>
+  <!--  <item android:drawable="@mipmap/sao7" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao8" android:duration="30"/>
+    <item android:drawable="@mipmap/sao9" android:duration="30"/>
+   <!-- <item android:drawable="@mipmap/sao10" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao11" android:duration="30"/>
+    <item android:drawable="@mipmap/sao12" android:duration="30"/>
+  <!--  <item android:drawable="@mipmap/sao13" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao14" android:duration="30"/>
+    <item android:drawable="@mipmap/sao15" android:duration="30"/>
+    <item android:drawable="@mipmap/sao16" android:duration="30"/>
+    <item android:drawable="@mipmap/sao17" android:duration="30"/>
+    <!--<item android:drawable="@mipmap/sao18" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao19" android:duration="30"/>
+    <item android:drawable="@mipmap/sao20" android:duration="30"/>
+   <!-- <item android:drawable="@mipmap/sao21" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao22" android:duration="30"/>
+    <item android:drawable="@mipmap/sao23" android:duration="30"/>
+  <!--  <item android:drawable="@mipmap/sao24" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao25" android:duration="30"/>
+    <item android:drawable="@mipmap/sao26" android:duration="30"/>
+    <item android:drawable="@mipmap/sao27" android:duration="30"/>
+    <item android:drawable="@mipmap/sao28" android:duration="30"/>
+  <!--  <item android:drawable="@mipmap/sao29" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao30" android:duration="30"/>
+    <item android:drawable="@mipmap/sao31" android:duration="30"/>
+    <item android:drawable="@mipmap/sao32" android:duration="30"/>
+    <item android:drawable="@mipmap/sao33" android:duration="30"/>
+ <!--   <item android:drawable="@mipmap/sao34" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao35" android:duration="30"/>
+    <item android:drawable="@mipmap/sao36" android:duration="30"/>
+   <!-- <item android:drawable="@mipmap/sao37" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao38" android:duration="30"/>
+    <item android:drawable="@mipmap/sao39" android:duration="20"/>
+    <!--<item android:drawable="@mipmap/sao40" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao41" android:duration="30"/>
+    <item android:drawable="@mipmap/sao42" android:duration="30"/>
+    <item android:drawable="@mipmap/sao43" android:duration="30"/>
+   <!-- <item android:drawable="@mipmap/sao44" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao45" android:duration="30"/>
+    <item android:drawable="@mipmap/sao46" android:duration="30"/>
+    <item android:drawable="@mipmap/sao47" android:duration="30"/>
+    <item android:drawable="@mipmap/sao48" android:duration="30"/>
+    <item android:drawable="@mipmap/sao49" android:duration="30"/>
+  <!--  <item android:drawable="@mipmap/sao50" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao51" android:duration="30"/>
+    <item android:drawable="@mipmap/sao52" android:duration="30"/>
+    <item android:drawable="@mipmap/sao53" android:duration="30"/>
+ <!--   <item android:drawable="@mipmap/sao54" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao55" android:duration="30"/>
+    <item android:drawable="@mipmap/sao56" android:duration="30"/>
+    <item android:drawable="@mipmap/sao57" android:duration="30"/>
+    <item android:drawable="@mipmap/sao58" android:duration="30"/>
+ <!--   <item android:drawable="@mipmap/sao59" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao60" android:duration="30"/>
+    <item android:drawable="@mipmap/sao61" android:duration="30"/>
+    <item android:drawable="@mipmap/sao62" android:duration="30"/>
+    <item android:drawable="@mipmap/sao63" android:duration="30"/>
+  <!--  <item android:drawable="@mipmap/sao64" android:duration="20"/>-->
+    <item android:drawable="@mipmap/sao65" android:duration="30"/>
+    <item android:drawable="@mipmap/sao66" android:duration="30"/>
+    <item android:drawable="@mipmap/sao67" android:duration="30"/>
+</animation-list>

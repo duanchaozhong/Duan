@@ -1,11 +1,10 @@
 package com.example.duan.duan.DCZ_fragment;
 
 import android.app.Dialog;
-import android.net.Uri;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import com.example.duan.duan.DCZ_adapter.NewsAdapter;
 import com.example.duan.duan.DCZ_bean.NewsBean;
 import com.example.duan.duan.DCZ_util.DialogUtil;
@@ -23,7 +19,6 @@ import com.example.duan.duan.DCZ_util.HttpServiceClient;
 import com.example.duan.duan.DCZ_util.StatusBarUtil;
 import com.example.duan.duan.R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import java.util.ArrayList;
@@ -48,6 +43,7 @@ public class AFragment extends Fragment {
     private int pageNumber=1;
     private int pageSize=5;
     NewsAdapter adapter;
+    private AnimationDrawable animationDrawable;
     @BindView(R.id.listview)
     XRecyclerView lv;
 
@@ -64,13 +60,16 @@ public class AFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        SimpleDraweeView iv= (SimpleDraweeView) view.findViewById(R.id.iv);
+        ImageView iv= (ImageView) view.findViewById(R.id.iv);
+        iv.setImageResource(R.drawable.progress_sao);
+        animationDrawable = (AnimationDrawable) iv.getDrawable();
+        animationDrawable.start();
        // int resource = R.mipmap.gif;
        // Glide.with(this).load(resource).placeholder(resource).into(iv);
        // Glide.with(this).load(resource).into(new GlideDrawableImageViewTarget(iv, 5));
       //  Glide.with(this).load(resource).asGif().placeholder(resource).diskCacheStrategy(DiskCacheStrategy.SOURCE).into(iv);
       //  Uri uri = Uri.parse("res://"+getActivity().getPackageName()+"/" + R.mipmap.gif);
-        iv.setImageResource(R.mipmap.gif);
+       // iv.setImageResource(R.mipmap.gif);
         // getData();
     }
 
@@ -104,7 +103,7 @@ public class AFragment extends Fragment {
      * 调取接口拿到服务器数据
      * */
     public void getData(){
-        dialog= DialogUtil.createLoadingDialog(getActivity(),getString(R.string.loaddings));
+        dialog= DialogUtil.createLoadingDialog(getActivity(),getString(R.string.loaddings),null);
         dialog.show();
         HttpServiceClient.getInstance().getNews("",pageNumber,pageSize).enqueue(new Callback<NewsBean>() {
             @Override
