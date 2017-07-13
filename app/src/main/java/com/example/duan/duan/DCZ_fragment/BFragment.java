@@ -16,6 +16,7 @@ import com.example.duan.duan.DCZ_activity.ChangeProtectActivity;
 import com.example.duan.duan.DCZ_activity.EquipmentManageActivity;
 import com.example.duan.duan.DCZ_activity.FootprintsActivity;
 import com.example.duan.duan.DCZ_activity.GameProtectActivity;
+import com.example.duan.duan.DCZ_activity.GesturesLockActivity;
 import com.example.duan.duan.DCZ_activity.HaveActivity;
 import com.example.duan.duan.DCZ_activity.OperationRecordActivity;
 import com.example.duan.duan.DCZ_activity.ScanActivity;
@@ -127,6 +128,13 @@ public class BFragment extends Fragment {
 
                     }
                 },R.style.registDialog).show();
+            }
+        });
+        number3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), GesturesLockActivity.class);
+                startActivity(intent);
             }
         });
         /**
