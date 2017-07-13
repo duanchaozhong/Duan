@@ -1,6 +1,7 @@
 package com.example.duan.duan.DCZ_fragment;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,15 +11,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.duan.duan.DCZ_activity.ChangePhoneActivity;
+import com.example.duan.duan.DCZ_activity.FootprintsActivity;
+import com.example.duan.duan.DCZ_activity.SecurityProtectActivity;
+import com.example.duan.duan.DCZ_activity.SettingActivity;
+import com.example.duan.duan.DCZ_activity.SettingPasswordActivity;
 import com.example.duan.duan.DCZ_adapter.NewsAdapter;
 import com.example.duan.duan.DCZ_bean.NewsBean;
 import com.example.duan.duan.DCZ_util.DialogUtil;
 import com.example.duan.duan.DCZ_util.HttpServiceClient;
 import com.example.duan.duan.DCZ_util.StatusBarUtil;
 import com.example.duan.duan.R;
-import com.facebook.drawee.view.SimpleDraweeView;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import java.util.ArrayList;
@@ -46,6 +52,16 @@ public class AFragment extends Fragment {
     private AnimationDrawable animationDrawable;
     @BindView(R.id.listview)
     XRecyclerView lv;
+    @BindView(R.id.back)
+    ImageView back;           //设置
+    @BindView(R.id.ll1)
+    LinearLayout ll1;         //我的足迹
+    @BindView(R.id.ll2)
+    LinearLayout ll2;         //密码安全
+    @BindView(R.id.ll3)
+    LinearLayout ll3;         //密保手机
+    @BindView(R.id.ll4)
+    LinearLayout ll4;         //安全保护
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,6 +80,8 @@ public class AFragment extends Fragment {
         iv.setImageResource(R.drawable.progress_sao);
         animationDrawable = (AnimationDrawable) iv.getDrawable();
         animationDrawable.start();
+        setViews();
+        setListener();
        // int resource = R.mipmap.gif;
        // Glide.with(this).load(resource).placeholder(resource).into(iv);
        // Glide.with(this).load(resource).into(new GlideDrawableImageViewTarget(iv, 5));
@@ -90,13 +108,58 @@ public class AFragment extends Fragment {
         super.onHiddenChanged(hidden);
         Log.i("dcz_AF","正在执行onHiddenChanged");
     }
-
+/**
+ *      初始化
+ *
+ * */
     private void setViews() {
 
     }
-
+/**
+ *      监听
+ *
+ * */
     private void setListener() {
-
+        //设置
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+        //我的足迹
+        ll1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), FootprintsActivity.class);
+                startActivity(intent);
+            }
+        });
+        //密码安全
+        ll2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), SettingPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
+        //密保手机
+        ll3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), ChangePhoneActivity.class);
+                startActivity(intent);
+            }
+        });
+        //安全保护
+        ll4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), SecurityProtectActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     /***

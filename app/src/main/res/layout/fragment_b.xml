@@ -15,9 +15,14 @@
         style="@style/Title"
         android:background="@color/text07">
 
-        <include
+        <ImageView
             android:id="@+id/back"
-            layout="@layout/layout_back" />
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/shezhi_bai"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -148,10 +153,13 @@
                 android:layout_marginRight="10dp"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:src="@mipmap/t0r"/>
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/saoma" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -192,18 +200,18 @@
 
                     <ImageView
                         android:id="@+id/imageView3"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/qianbao" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_marginTop="5dp"
-                        android:textSize="@dimen/text01"
+                        android:text="钱包保护"
                         android:textColor="@color/text05"
-                        android:text="钱包保护" />
+                        android:textSize="@dimen/text01" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -215,9 +223,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/tuiche" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -238,9 +247,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/duihuan" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -261,9 +270,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/youxi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -306,9 +315,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/shouji" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -329,9 +338,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/suohao" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -352,9 +362,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/suo" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -375,9 +385,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/youxiang" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -420,9 +430,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/zuji" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -443,9 +453,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/jilu" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -466,9 +476,9 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/shebei" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -490,9 +500,9 @@
 
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:src="@mipmap/shebei" />
 
                     <TextView
                         android:layout_width="wrap_content"

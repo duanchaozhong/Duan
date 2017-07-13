@@ -19,12 +19,20 @@
         android:orientation="vertical"
         android:background="#386df7"
         android:layout_weight="1">
+
         <RelativeLayout
             style="@style/Title"
             android:layout_marginTop="20dp">
-            <include
+
+            <ImageView
                 android:id="@+id/back"
-                layout="@layout/layout_back" />
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/shezhi_bai"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="20dp"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,14 +40,16 @@
                 android:text="账户安全管家"
                 android:textColor="@color/title"
                 android:textSize="@dimen/title" />
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="@color/white"
+                android:layout_height="0.02dp"
+                android:layout_alignParentBottom="true"
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"
-                android:layout_alignParentBottom="true"/>
+                android:background="@color/white" />
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -74,7 +84,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
                     android:layout_marginTop="3dp"
-                    android:text="账户暂无安全风险"/>
+                    android:textSize="17sp"
+                    android:text="正在检测中...."/>
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
@@ -95,51 +106,59 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:src="@mipmap/t1r"/>
+                    android:src="@mipmap/shouye1"/>
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/text05"
-                        android:textSize="@dimen/text01"
-                        android:text="我的足迹"/>
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/text06"
-                        android:textSize="@dimen/text02"
-                        android:text="当前3处登录 上次登录广东深圳" />
-                </LinearLayout>
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1">
-                </View>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center_vertical">
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_marginRight="@dimen/right"
-                        android:visibility="gone"
-                        android:src="@mipmap/t1r" />
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/you" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的足迹"
+                            android:textColor="@color/text05"
+                            android:textSize="@dimen/text01" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text06"
+                            android:textSize="@dimen/text02"
+                            android:text="当前3处登录 上次登录广东深圳" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1">
+                    </View>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="@dimen/right"
+                            android:visibility="gone"
+                            android:src="@mipmap/t1r" />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="@dimen/left"
+                            android:src="@mipmap/you" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -150,52 +169,59 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:src="@mipmap/t1r"/>
+                    android:src="@mipmap/shouye2"/>
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/text05"
-                        android:textSize="@dimen/text01"
-                        android:text="密码安全"/>
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:textColor="@color/text06"
-                        android:textSize="@dimen/text02"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="正在检测密码安全情况" />
-                </LinearLayout>
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1">
-                </View>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center_vertical">
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_marginRight="@dimen/right"
-                        android:visibility="gone"
-                        android:src="@mipmap/t1r" />
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/you" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text05"
+                            android:textSize="@dimen/text01"
+                            android:text="密码安全"/>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:textColor="@color/text06"
+                            android:textSize="@dimen/text02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="正在检测密码安全情况" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1">
+                    </View>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="@dimen/right"
+                            android:visibility="gone"
+                            android:src="@mipmap/t1r" />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="@dimen/left"
+                            android:src="@mipmap/you" />
+                    </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -205,50 +231,57 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:src="@mipmap/t1r"/>
+                    android:src="@mipmap/shouye3"/>
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/text05"
-                        android:textSize="@dimen/text01"
-                        android:text="密保手机"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/text06"
-                        android:textSize="@dimen/text02"
-                        android:text="已绑定密保手机132****8723"/>
-                </LinearLayout>
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1">
-                </View>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center_vertical">
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_marginRight="@dimen/right"
-                        android:visibility="gone"
-                        android:src="@mipmap/t1r" />
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/you" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text05"
+                            android:textSize="@dimen/text01"
+                            android:text="密保手机"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text06"
+                            android:textSize="@dimen/text02"
+                            android:text="已绑定密保手机132****8723"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1">
+                    </View>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="@dimen/right"
+                            android:visibility="gone"
+                            android:src="@mipmap/t1r" />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="@dimen/left"
+                            android:src="@mipmap/you" />
+                    </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -258,51 +291,60 @@
                 android:layout_marginBottom="2dp"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:id="@+id/imageView7"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:src="@mipmap/t1r"/>
+                    android:src="@mipmap/shouye4" />
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/text05"
-                        android:textSize="@dimen/text01"
-                        android:text="安全保护"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/text06"
-                        android:textSize="@dimen/text02"
-                        android:text="已开启三类保护"/>
-                </LinearLayout>
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1">
-                </View>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:gravity="center_vertical">
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_marginRight="@dimen/right"
-                        android:visibility="gone"
-                        android:src="@mipmap/t1r" />
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/you" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text05"
+                            android:textSize="@dimen/text01"
+                            android:text="安全保护"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text06"
+                            android:textSize="@dimen/text02"
+                            android:text="已开启三类保护"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1">
+                    </View>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="@dimen/right"
+                            android:visibility="gone"
+                            android:src="@mipmap/t1r" />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="@dimen/left"
+                            android:src="@mipmap/you" />
+                    </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

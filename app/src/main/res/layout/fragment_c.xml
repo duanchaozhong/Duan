@@ -12,9 +12,14 @@
     <RelativeLayout
         style="@style/Title"
         android:background="@color/text07">
-        <include
+        <ImageView
             android:id="@+id/back"
-            layout="@layout/layout_back" />
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/shezhi_bai"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,9 +60,9 @@
 
                         <ImageView
                             android:id="@+id/imageView"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:src="@mipmap/ic_launcher" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:src="@mipmap/jiaoyi" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -75,9 +80,9 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:src="@mipmap/ic_launcher" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:src="@mipmap/zhanghu" />
 
                         <TextView
                             android:layout_width="wrap_content"

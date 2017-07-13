@@ -8,8 +8,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.duan.duan.DCZ_activity.ChangePhoneActivity;
 import com.example.duan.duan.DCZ_activity.ChangeProtectActivity;
@@ -18,11 +20,15 @@ import com.example.duan.duan.DCZ_activity.FootprintsActivity;
 import com.example.duan.duan.DCZ_activity.GameProtectActivity;
 import com.example.duan.duan.DCZ_activity.GesturesLockActivity;
 import com.example.duan.duan.DCZ_activity.HaveActivity;
+import com.example.duan.duan.DCZ_activity.LoginLockActivity;
 import com.example.duan.duan.DCZ_activity.OperationRecordActivity;
 import com.example.duan.duan.DCZ_activity.ScanActivity;
+import com.example.duan.duan.DCZ_activity.SettingActivity;
 import com.example.duan.duan.DCZ_activity.SettingPasswordActivity;
 import com.example.duan.duan.DCZ_activity.ShopProtectActivity;
 import com.example.duan.duan.DCZ_activity.WalletProtectActivity;
+import com.example.duan.duan.DCZ_lockdemo.CustomLockView;
+import com.example.duan.duan.DCZ_lockdemo.LockUtil;
 import com.example.duan.duan.DCZ_selft.MiddleDialog;
 import com.example.duan.duan.DCZ_util.StatusBarUtil;
 import com.example.duan.duan.R;
@@ -35,7 +41,10 @@ import butterknife.ButterKnife;
  *
  * */
 public class BFragment extends Fragment {
+    private int[] mIndexs;
     private View view;
+    @BindView(R.id.back)
+    ImageView back;
     @BindView(R.id.number1)
     TextView number1;
     @BindView(R.id.number2)
@@ -112,6 +121,14 @@ public class BFragment extends Fragment {
     }
 
     private void setListener() {
+        //设置
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), SettingActivity.class);
+                startActivity(intent);
+            }
+        });
         number1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

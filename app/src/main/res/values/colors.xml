@@ -22,6 +22,8 @@
     <color name="bg">#CDB5CD</color>
 
     <color name="mp_touming">#00000000</color>
+    <color name="yellow">#366cf4</color><!--黄色 -->
+    <color name="red">#ff0000</color><!--红色 -->
 
     <color name="alpha">#000000</color>
     <color name="text_title">#ffffff</color>

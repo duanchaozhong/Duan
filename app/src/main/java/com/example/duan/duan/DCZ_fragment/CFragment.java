@@ -8,10 +8,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.duan.duan.DCZ_activity.LoginActivity;
+import com.example.duan.duan.DCZ_activity.SettingActivity;
 import com.example.duan.duan.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  *  发现
@@ -20,10 +25,13 @@ import com.example.duan.duan.R;
 public class CFragment extends Fragment {
     private View view;
     private LinearLayout ll1;
+    @BindView(R.id.back)
+    ImageView back;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = View.inflate(getActivity(), R.layout.fragment_c, null);
+        ButterKnife.bind(this, view);
         return view;
     }
 
@@ -57,6 +65,14 @@ public class CFragment extends Fragment {
     }
 
     private void setListener() {
+        //设置
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), SettingActivity.class);
+                startActivity(intent);
+            }
+        });
         ll1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
