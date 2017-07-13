@@ -61,7 +61,7 @@
                 android:layout_width="160dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="20dp"
-                android:background="@mipmap/sao1"/>
+                android:background="@mipmap/shouquan"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

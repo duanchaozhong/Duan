@@ -69,7 +69,7 @@
             android:checked="true"
             app:kswTextOff="Off"
             app:kswTextOn="On"
-            app:kswTintColor="@color/text_lv"
+            app:kswTintColor="@color/white"
             app:kswBackDrawable="@drawable/ios_back_drawable"
             android:textColor="@color/custom_text_state_color"
             android:textSize="16dp"/>
@@ -107,7 +107,7 @@
             android:checked="true"
             app:kswTextOff="Off"
             app:kswTextOn="On"
-            app:kswTintColor="@color/text_lv"
+            app:kswTintColor="@color/white"
             app:kswBackDrawable="@drawable/ios_back_drawable"
             android:textColor="@color/custom_text_state_color"
             android:textSize="16dp"/>

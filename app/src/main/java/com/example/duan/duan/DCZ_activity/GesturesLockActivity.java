@@ -34,7 +34,7 @@ public class GesturesLockActivity extends BaseActivity {
     private int times=0;
     private int[] mIndexs=null;
     @BindView(R.id.back)
-    View back;
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,6 +127,12 @@ public class GesturesLockActivity extends BaseActivity {
         list.add(ivh);
         list.add(ivi);
         tvWarn=getViewById(R.id.tvWarn);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     /**
