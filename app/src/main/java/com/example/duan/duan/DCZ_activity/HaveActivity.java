@@ -1,18 +1,27 @@
 package com.example.duan.duan.DCZ_activity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.duan.duan.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  *  一键授权
  *
  * */
 public class HaveActivity extends BaseActivity {
-
+    private HaveActivity INSTANCE;
+    @BindView(R.id.back)
+    View back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_have);
+        ButterKnife.bind(this);
+        INSTANCE=this;
         setViews();
         setListener();
     }
@@ -28,6 +37,11 @@ public class HaveActivity extends BaseActivity {
      *
      * */
     private void setListener() {
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

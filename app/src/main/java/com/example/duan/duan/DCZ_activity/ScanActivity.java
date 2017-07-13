@@ -11,6 +11,7 @@ import android.os.Vibrator;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 
 import com.example.duan.duan.DCZ_util.StatusBarUtil;
 import com.example.duan.duan.R;
@@ -23,6 +24,9 @@ import com.google.zxing.Result;
 
 import java.io.IOException;
 import java.util.Vector;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 /**
@@ -41,13 +45,16 @@ public class ScanActivity extends BaseActivity implements SurfaceHolder.Callback
     private static final float BEEP_VOLUME = 0.10f;
     private boolean vibrate;
     private static SurfaceView surfaceView;
-
     private static ScanActivity INSTANCE;
     public static Dialog dialog;
+
+    @BindView(R.id.back)
+    View back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
+        ButterKnife.bind(this);
         INSTANCE = this;
         CameraManager.init(INSTANCE);
         setViews();
@@ -68,7 +75,12 @@ public class ScanActivity extends BaseActivity implements SurfaceHolder.Callback
      *
      * */
     private void setListener() {
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override

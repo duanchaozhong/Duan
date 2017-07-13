@@ -15,6 +15,7 @@ import butterknife.ButterKnife;
  *
  * */
 public class ChangeProtectActivity extends Activity {
+    private ChangeProtectActivity INSTANCE;
     @BindView(R.id.back)
     View back;
     @Override
@@ -22,6 +23,7 @@ public class ChangeProtectActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_protect);
         ButterKnife.bind(this);
+        INSTANCE=this;
         setViews();
         setListener();
     }

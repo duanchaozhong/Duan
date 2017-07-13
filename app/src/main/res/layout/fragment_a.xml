@@ -46,7 +46,7 @@
             android:padding="10dp">
             <ImageView
                 android:id="@+id/iv"
-                android:background="@drawable/progress_sao"
+                android:background="@mipmap/sao1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
             <LinearLayout
@@ -139,7 +139,7 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/t1r" />
+                        android:src="@mipmap/you" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -194,7 +194,7 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/t1r" />
+                        android:src="@mipmap/you" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -247,7 +247,7 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/t1r" />
+                        android:src="@mipmap/you" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -301,7 +301,7 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginRight="@dimen/left"
-                        android:src="@mipmap/t1r" />
+                        android:src="@mipmap/you" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

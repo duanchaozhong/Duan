@@ -18,15 +18,24 @@ public class MiddleDialog<E> extends Dialog {
     private onUpdateListeners listeners3;
     private E bean;
     private int position;
+    private View view;
 
     public MiddleDialog(Context context, String title, final onButtonCLickListener2<E> listener, int theme) {
         super(context, theme);
-        View view = View.inflate(context, R.layout.dialog_middle, null);
+        if(title.equals("动态密码")){
+            view = View.inflate(context, R.layout.dialog2_middle, null);
+            view.findViewById(R.id.home).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dismiss();
+                }
+            });
+        }else {
+            view = View.inflate(context, R.layout.dialog_middle, null);
+        }
         setContentView(view);
         setCancelable(true);        //设置点击对话框以外的区域时，是否结束对话框
-
         ((TextView) view.findViewById(R.id.middle_tv)).setText(title);       //设置对话框的标题内容
-
         this.listener2 = listener;
         view.findViewById(R.id.ok).setOnClickListener(new View.OnClickListener() {//取消
             @Override

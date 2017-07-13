@@ -1,18 +1,27 @@
 package com.example.duan.duan.DCZ_activity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.duan.duan.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  *  更换密保手机（身份证验证）
  *
  * */
 public class ChangePhone3Activity extends BaseActivity {
-
+    private ChangePhone3Activity INSTANCE;
+    @BindView(R.id.back)
+    View back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_phone3);
+        ButterKnife.bind(this);
+        INSTANCE=this;
         setViews();
         setListener();
     }
@@ -29,6 +38,11 @@ public class ChangePhone3Activity extends BaseActivity {
      *
      * */
     private void setListener() {
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

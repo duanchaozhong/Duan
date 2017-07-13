@@ -4,14 +4,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg1"
     tools:context="com.example.duan.duan.DCZ_activity.HaveActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/bg_title"/>
+        android:background="@color/white"/>
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/bg_title">
+        android:background="@color/white">
         <include
             android:id="@+id/back"
             layout="@layout/layout_back" />
@@ -19,8 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="一键授权"
-            android:textColor="@color/text_title"
+            android:text="授权登录"
+            android:textColor="@color/text01"
             android:textSize="@dimen/title" />
         <TextView
             android:layout_width="match_parent"
@@ -28,4 +29,70 @@
             android:background="@color/xian1"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/left"
+        android:paddingRight="@dimen/right"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/sao1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text01"
+                android:textColor="@color/text07"
+                android:text="857999639"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text01"
+                android:textColor="@color/text05"
+                android:text="在"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text01"
+                android:textColor="@color/text07"
+                android:text="中国-广东深圳"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text01"
+            android:textColor="@color/text05"
+            android:layout_marginTop="2dp"
+            android:text="请求授权登录撮合交易平台"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认授权"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/yuanjiaolan2"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拒绝授权"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yuanjiaolan2"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"/>
+    </LinearLayout>
 </LinearLayout>

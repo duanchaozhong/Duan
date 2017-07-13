@@ -13,6 +13,7 @@ import butterknife.ButterKnife;
  *
  * */
 public class ShopProtectActivity extends BaseActivity {
+    private ShopProtectActivity INSTANCE;
     @BindView(R.id.back)
     View back;
     @Override
@@ -20,6 +21,7 @@ public class ShopProtectActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_protect);
         ButterKnife.bind(this);
+        INSTANCE=this;
         setViews();
         setListener();
     }

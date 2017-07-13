@@ -9,17 +9,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.duan.duan.DCZ_activity.ChangePhoneActivity;
 import com.example.duan.duan.DCZ_activity.ChangeProtectActivity;
 import com.example.duan.duan.DCZ_activity.EquipmentManageActivity;
 import com.example.duan.duan.DCZ_activity.FootprintsActivity;
 import com.example.duan.duan.DCZ_activity.GameProtectActivity;
+import com.example.duan.duan.DCZ_activity.HaveActivity;
 import com.example.duan.duan.DCZ_activity.OperationRecordActivity;
 import com.example.duan.duan.DCZ_activity.ScanActivity;
 import com.example.duan.duan.DCZ_activity.SettingPasswordActivity;
 import com.example.duan.duan.DCZ_activity.ShopProtectActivity;
 import com.example.duan.duan.DCZ_activity.WalletProtectActivity;
+import com.example.duan.duan.DCZ_selft.MiddleDialog;
 import com.example.duan.duan.DCZ_util.StatusBarUtil;
 import com.example.duan.duan.R;
 
@@ -32,8 +35,20 @@ import butterknife.ButterKnife;
  * */
 public class BFragment extends Fragment {
     private View view;
-    @BindView(R.id.scan)    //钱包保护
-    LinearLayout scan;
+    @BindView(R.id.number1)
+    TextView number1;
+    @BindView(R.id.number2)
+    TextView number2;
+    @BindView(R.id.number3)
+    TextView number3;
+    @BindView(R.id.number4)
+    TextView number4;
+    @BindView(R.id.number5)
+    TextView number5;
+    @BindView(R.id.number6)
+    TextView number6;
+    @BindView(R.id.scan)
+    LinearLayout scan;      //钱包保护
     @BindView(R.id.ll1)
     LinearLayout ll1;       //钱包保护
     @BindView(R.id.ll2)
@@ -96,6 +111,24 @@ public class BFragment extends Fragment {
     }
 
     private void setListener() {
+        number1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), HaveActivity.class);
+                startActivity(intent);
+            }
+        });
+        number2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new MiddleDialog(getActivity(), "动态密码", new MiddleDialog.onButtonCLickListener2() {
+                    @Override
+                    public void onActivieButtonClick(Object bean, int position) {
+
+                    }
+                },R.style.registDialog).show();
+            }
+        });
         /**
          *  扫码
          * */

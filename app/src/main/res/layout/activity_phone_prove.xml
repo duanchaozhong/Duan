@@ -9,10 +9,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/text07"/>
+        android:background="@color/bg_title"/>
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/text07">
+        android:background="@color/bg_title">
         <include
             android:id="@+id/back"
             layout="@layout/layout_back" />

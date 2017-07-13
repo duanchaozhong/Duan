@@ -14,6 +14,7 @@ import butterknife.ButterKnife;
  *
  * */
 public class WalletProtectActivity extends BaseActivity{
+    private WalletProtectActivity INSTANCE;
     @BindView(R.id.back)
     View back;
     @BindView(R.id.button1)
@@ -25,6 +26,7 @@ public class WalletProtectActivity extends BaseActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallet_protect);
         ButterKnife.bind(this);
+        INSTANCE=this;
         setViews();
         setListener();
     }

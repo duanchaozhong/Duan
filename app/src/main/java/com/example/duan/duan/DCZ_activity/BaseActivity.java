@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.View;
 
 import com.example.duan.duan.DCZ_util.StatusBarUtil;
+import com.example.duan.duan.R;
 
 import butterknife.ButterKnife;
 

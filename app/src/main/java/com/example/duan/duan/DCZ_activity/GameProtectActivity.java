@@ -13,6 +13,7 @@ import butterknife.ButterKnife;
  *
  * */
 public class GameProtectActivity extends BaseActivity {
+    private GameProtectActivity INSTANCE;
     @BindView(R.id.back)
     View back;
     @Override
@@ -20,6 +21,7 @@ public class GameProtectActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_protect);
         ButterKnife.bind(this);
+        INSTANCE=this;
         setViews();
         setListener();
     }
