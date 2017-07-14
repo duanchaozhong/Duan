@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.duan.duan.DCZ_activity.ChangePhoneActivity;
 import com.example.duan.duan.DCZ_activity.ChangeProtectActivity;
 import com.example.duan.duan.DCZ_activity.EquipmentManageActivity;
+import com.example.duan.duan.DCZ_activity.FaceKnowActivity;
 import com.example.duan.duan.DCZ_activity.FootprintsActivity;
 import com.example.duan.duan.DCZ_activity.GameProtectActivity;
 import com.example.duan.duan.DCZ_activity.GesturesLockActivity;
@@ -151,6 +152,13 @@ public class BFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), GesturesLockActivity.class);
+                startActivity(intent);
+            }
+        });
+        number4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), FaceKnowActivity.class);
                 startActivity(intent);
             }
         });

@@ -7,7 +7,7 @@
     <!-- 普通底部导航 -->
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="55dp">
+        android:layout_height="45dp">
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

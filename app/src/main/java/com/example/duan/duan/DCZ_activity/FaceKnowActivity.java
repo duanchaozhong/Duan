@@ -2,6 +2,7 @@ package com.example.duan.duan.DCZ_activity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.duan.duan.R;
 
@@ -15,7 +16,7 @@ import butterknife.ButterKnife;
 public class FaceKnowActivity extends BaseActivity {
     private FaceKnowActivity INSTANCE;
     @BindView(R.id.back)
-    View back;
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

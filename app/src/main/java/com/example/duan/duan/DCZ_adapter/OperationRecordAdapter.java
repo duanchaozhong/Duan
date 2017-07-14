@@ -43,8 +43,8 @@ public class OperationRecordAdapter extends RecyclerView.Adapter<OperationRecord
         }else {
             holder.xian1.setVisibility(View.VISIBLE);
         }
-        adapter=new OperationRecord2Adapter(context,list);
-        holder.lv.setAdapter(adapter);
+            adapter=new OperationRecord2Adapter(context,list);
+            holder.lv.setAdapter(adapter);
     }
 
     @Override

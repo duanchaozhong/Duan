@@ -7,7 +7,7 @@
     tools:context="com.example.duan.duan.MainActivity">
     <include
         android:id="@+id/bottom_tab"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_width="match_parent"
         layout="@layout/layout_bottom_tab"
         android:layout_alignParentBottom="true"/>
@@ -32,6 +32,6 @@
         </View>
         <View
             android:layout_width="match_parent"
-            android:layout_height="54dp"></View>
+            android:layout_height="45dp"></View>
     </LinearLayout>
 </RelativeLayout>

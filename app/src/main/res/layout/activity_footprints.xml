@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg1"
     tools:context="com.example.duan.duan.DCZ_activity.FootprintsActivity">
     <TextView
         android:layout_width="match_parent"
@@ -28,4 +29,48 @@
             android:background="@color/xian1"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text01"
+                android:textColor="@color/text05"
+                android:paddingLeft="@dimen/left"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="当前登录"/>
+            <com.example.duan.duan.DCZ_selft.GridViewForScrollView
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:clickable="false"
+                android:scrollbars="none">
+            </com.example.duan.duan.DCZ_selft.GridViewForScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text01"
+                android:textColor="@color/text05"
+                android:paddingLeft="@dimen/left"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="最近登录记录"/>
+            <com.example.duan.duan.DCZ_selft.GridViewForScrollView
+                android:id="@+id/lv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:divider="@null"
+                android:clickable="false"
+                android:scrollbars="none">
+            </com.example.duan.duan.DCZ_selft.GridViewForScrollView>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
