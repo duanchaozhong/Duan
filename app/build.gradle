@@ -35,8 +35,6 @@ dependencies {
     })
     //上拉与下拉加载view
     compile project(':xrecyclerview')
-    //TabLayout
-    compile project(path: ':FlycoTabLayout_Lib')
     //百分比布局
     //图片加载神器
     //网络框架

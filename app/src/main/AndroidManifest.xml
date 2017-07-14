@@ -43,9 +43,7 @@
         <activity android:name=".DCZ_activity.WelcomeActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".DCZ_activity.LoginActivity" />
-        <activity android:name=".DCZ_activity.EncryptedActivity" />
         <activity android:name=".DCZ_activity.FootprintsActivity" />
-        <activity android:name=".DCZ_activity.CurrentPhoneActivity" />
         <activity android:name=".DCZ_activity.ChangePhone1Activity" />
         <activity android:name=".DCZ_activity.ChangePhone2Activity" />
         <activity android:name=".DCZ_activity.ChangePhone3Activity" />
@@ -71,6 +69,8 @@
         <activity android:name=".DCZ_activity.ChangePasswordActivity" />
         <activity android:name=".DCZ_activity.LoginLockActivity" />
         <activity android:name=".DCZ_activity.SettingActivity" />
+        <activity android:name=".DCZ_activity.ChangePassword2Activity" />
+        <activity android:name=".DCZ_activity.LockActivity"></activity>
     </application>
 
 </manifest>

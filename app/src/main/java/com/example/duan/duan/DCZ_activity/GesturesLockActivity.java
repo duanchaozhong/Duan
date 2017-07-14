@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.example.duan.duan.DCZ_lockdemo.CustomLockView;
 import com.example.duan.duan.DCZ_lockdemo.LockUtil;
 import com.example.duan.duan.DCZ_lockdemo.ScreenObserver;
+import com.example.duan.duan.DCZ_util.ActivityUtils;
 import com.example.duan.duan.R;
 
 import java.util.ArrayList;
@@ -139,9 +140,10 @@ public class GesturesLockActivity extends BaseActivity {
      * 会员验证
      */
     private void invalidateUser( ){
-        Intent i=new Intent();
+      /*  Intent i=new Intent();
         i.setClass(this,LoginLockActivity.class);
-        startActivity(i);
+        startActivity(i);*/
+        ActivityUtils.getInstance().popAllActivities();
         finish();
     }
 }

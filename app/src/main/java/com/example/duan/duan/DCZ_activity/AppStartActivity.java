@@ -23,10 +23,11 @@ public class AppStartActivity extends Activity {
     }
 
     private void suo() {
-        mIndexs= LockUtil.getPwd(this);
+        //mIndexs= LockUtil.getPwd(this);
         //判断当前是否设置过密码
-        if(mIndexs.length>1&&MyApplication.suo==true){
+        if(LockUtil.getPwdStatus(this)==true&&MyApplication.suo==true){
             Intent intent=new Intent(this,LoginLockActivity.class);
+            intent.putExtra("type","1");
             startActivity(intent);
             finish();
         }else {

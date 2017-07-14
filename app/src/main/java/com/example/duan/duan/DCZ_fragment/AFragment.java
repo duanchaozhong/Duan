@@ -149,7 +149,7 @@ public class AFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), ChangePhoneActivity.class);
-                startActivity(intent);
+                 startActivity(intent);
             }
         });
         //安全保护

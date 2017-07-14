@@ -14,6 +14,7 @@ import com.example.duan.duan.DCZ_application.MyApplication;
 import com.example.duan.duan.DCZ_lockdemo.CustomLockView;
 import com.example.duan.duan.DCZ_lockdemo.LockUtil;
 import com.example.duan.duan.DCZ_lockdemo.ScreenObserver;
+import com.example.duan.duan.DCZ_util.ActivityUtils;
 import com.example.duan.duan.MainActivity;
 import com.example.duan.duan.R;
 /**
@@ -21,6 +22,7 @@ import com.example.duan.duan.R;
  *
  * */
 public class LoginLockActivity extends BaseActivity {
+    private String type;//1 是登录，2是删除锁,3或者null是更改密码
     public Context context;
     public <K extends View> K getViewById(int id) {
         return (K) getWindow().findViewById(id);
@@ -33,6 +35,7 @@ public class LoginLockActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_lock);
         context=this;
+        type=getIntent().getStringExtra("type");
         mScreenObserver = new ScreenObserver(this);
         mScreenObserver.requestScreenStateUpdate(new ScreenObserver.ScreenStateListener() {
             @Override
@@ -54,10 +57,24 @@ public class LoginLockActivity extends BaseActivity {
             cl.setOnCompleteListener(new CustomLockView.OnCompleteListener() {
                 @Override
                 public void onComplete(int[] indexs) {
-                    Toast.makeText(LoginLockActivity.this,"输入正确",Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(LoginLockActivity.this, MainActivity.class);
-                    startActivity(intent);
-                    MyApplication.suo=false;
+                    if(type!=null){
+                        //刚进来或关锁进来
+                        if(type.equals("1")){
+                            //刚进来APP
+                            Toast.makeText(LoginLockActivity.this,"输入正确",Toast.LENGTH_SHORT).show();
+                            Intent intent=new Intent(LoginLockActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            MyApplication.suo=false;
+                        }else {
+                            LockUtil.setPwdStatus(context,false);
+                            ActivityUtils.getInstance().popAllActivities();
+                            Toast.makeText(LoginLockActivity.this,"手势锁已关闭",Toast.LENGTH_SHORT).show();
+                        }
+                    }else {
+                        //修改密码或设置密码进来
+                        Toast.makeText(LoginLockActivity.this,"输入正确",Toast.LENGTH_SHORT).show();
+                        ActivityUtils.getInstance().popAllActivities();
+                    }
                     finish();
                 }
 
@@ -103,5 +120,11 @@ public class LoginLockActivity extends BaseActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

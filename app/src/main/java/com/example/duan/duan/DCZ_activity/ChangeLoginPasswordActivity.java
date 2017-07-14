@@ -3,6 +3,7 @@ package com.example.duan.duan.DCZ_activity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.duan.duan.DCZ_util.ActivityUtils;
 import com.example.duan.duan.R;
 
 import butterknife.BindView;
@@ -42,6 +43,7 @@ public class ChangeLoginPasswordActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 finish();
+                ActivityUtils.getInstance().popActivity(INSTANCE);
             }
         });
     }

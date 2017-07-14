@@ -1,8 +1,10 @@
 package com.example.duan.duan.DCZ_activity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.duan.duan.DCZ_selft.MiddleDialog;
 import com.example.duan.duan.DCZ_util.DialogUtil;
@@ -20,7 +22,9 @@ public class LoginActivity extends BaseActivity {
     @BindView(R.id.back)
     View back;
     @BindView(R.id.button)
-    View button;
+    TextView button;           //下一步
+    @BindView(R.id.button2)
+    View button2;           //找回密码
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,13 +54,23 @@ public class LoginActivity extends BaseActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            //    DialogUtil.createLoadingDialog(INSTANCE,"登陆中","2").show();
+                Intent intent=new Intent(INSTANCE, PhoneProveActivity.class);
+                startActivity(intent);
+      /*      //    DialogUtil.createLoadingDialog(INSTANCE,"登陆中","2").show();
                 new MiddleDialog(INSTANCE, "账号或密码错误，请重新填写", new MiddleDialog.onButtonCLickListener2() {
                     @Override
                     public void onActivieButtonClick(Object bean, int position) {
 
                     }
-                },R.style.registDialog).show();
+                },R.style.registDialog).show();*/
+            }
+        });
+        //密保认证
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(INSTANCE, ChangePasswordActivity.class);
+                startActivity(intent);
             }
         });
     }

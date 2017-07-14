@@ -1,6 +1,7 @@
 package com.example.duan.duan.DCZ_activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,8 @@ public class PhoneProveActivity extends Activity {
     private PhoneProveActivity INSTANCE;
     @BindView(R.id.back)
     View back;
+    @BindView(R.id.button)
+    View button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,12 @@ public class PhoneProveActivity extends Activity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }
