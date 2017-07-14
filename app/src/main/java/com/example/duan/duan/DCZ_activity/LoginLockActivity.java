@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.duan.duan.DCZ_application.MyApplication;
 import com.example.duan.duan.DCZ_lockdemo.CustomLockView;
 import com.example.duan.duan.DCZ_lockdemo.LockUtil;
 import com.example.duan.duan.DCZ_lockdemo.ScreenObserver;
@@ -19,7 +20,7 @@ import com.example.duan.duan.R;
  *  手势解锁页面
  *
  * */
-public class LoginLockActivity extends Activity {
+public class LoginLockActivity extends BaseActivity {
     public Context context;
     public <K extends View> K getViewById(int id) {
         return (K) getWindow().findViewById(id);
@@ -56,6 +57,7 @@ public class LoginLockActivity extends Activity {
                     Toast.makeText(LoginLockActivity.this,"输入正确",Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(LoginLockActivity.this, MainActivity.class);
                     startActivity(intent);
+                    MyApplication.suo=false;
                     finish();
                 }
 

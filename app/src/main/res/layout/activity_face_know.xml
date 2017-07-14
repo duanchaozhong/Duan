@@ -28,4 +28,12 @@
             android:background="@color/xian1"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/left"
+        android:paddingRight="@dimen/right"
+        android:orientation="vertical">
+
+    </LinearLayout>
 </LinearLayout>
