@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg1"
@@ -10,19 +11,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/bg_title"/>
+        android:background="@color/bg_title2"/>
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/bg_title">
+        android:background="@color/bg_title2">
         <include
             android:id="@+id/back"
-            layout="@layout/layout_back" />
+            layout="@layout/layout_back2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="钱包保护"
-            android:textColor="@color/text_title"
+            android:textColor="@color/text_title2"
             android:textSize="@dimen/title" />
         <TextView
             android:layout_width="match_parent"
@@ -44,17 +45,22 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingLeft="@dimen/left">
-        <ImageView
-            android:id="@+id/iv1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/t0r"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            fresco:placeholderImage="@mipmap/zhanwei"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/iv1"
+            android:layout_toRightOf="@id/sdv1"
             android:layout_marginLeft="10dp"
             android:textSize="@dimen/text01"
             android:textColor="@color/text05"
@@ -84,19 +90,24 @@
         android:paddingLeft="@dimen/left"
         android:paddingTop="10dp">
 
-        <ImageView
-            android:id="@+id/iv2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/t0r" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            fresco:placeholderImage="@mipmap/zhanwei"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/iv2"
+            android:layout_toRightOf="@id/sdv2"
             android:text="钱包支付"
             android:textColor="@color/text05"
             android:textSize="@dimen/text01" />

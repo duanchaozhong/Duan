@@ -1,8 +1,10 @@
 package com.example.duan.duan.DCZ_activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.duan.duan.R;
 
@@ -16,7 +18,9 @@ import butterknife.ButterKnife;
 public class FaceKnowActivity extends BaseActivity {
     private FaceKnowActivity INSTANCE;
     @BindView(R.id.back)
-    ImageView back;
+    View back;
+    @BindView(R.id.button)
+    TextView button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +46,13 @@ public class FaceKnowActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(INSTANCE,FaceCollectActivity.class);
+                startActivity(intent);
             }
         });
     }

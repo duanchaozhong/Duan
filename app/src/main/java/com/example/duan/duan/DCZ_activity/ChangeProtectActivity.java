@@ -14,7 +14,7 @@ import butterknife.ButterKnife;
  *  兑换保护
  *
  * */
-public class ChangeProtectActivity extends Activity {
+public class ChangeProtectActivity extends BaseActivity {
     private ChangeProtectActivity INSTANCE;
     @BindView(R.id.back)
     View back;

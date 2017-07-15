@@ -54,8 +54,13 @@ public class Footprints2Adapter extends BaseAdapter{
         }else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-            adapter=new Footprints3Adapter(context,list);
-            viewHolder.lv.setAdapter(adapter);
+        if(position==0){
+            viewHolder.xian1.setVisibility(View.GONE);
+        }else {
+            viewHolder.xian1.setVisibility(View.VISIBLE);
+        }
+        adapter=new Footprints3Adapter(context,list);
+        viewHolder.lv.setAdapter(adapter);
         return convertView;
     }
 
@@ -63,10 +68,12 @@ public class Footprints2Adapter extends BaseAdapter{
         GridViewForScrollView lv;
         TextView tv1;
         TextView tv2;
+        TextView xian1;
         public ViewHolder(View view) {
             lv=(GridViewForScrollView)view.findViewById(R.id.lv);
             tv1=(TextView)view.findViewById(R.id.tv1);
             tv2=(TextView)view.findViewById(R.id.tv2);
+            xian1=(TextView)view.findViewById(R.id.xian1);
         }
     }
     public void notify(List<FootprintsBean> list){

@@ -19,7 +19,6 @@ import com.example.duan.duan.DCZ_activity.FootprintsActivity;
 import com.example.duan.duan.DCZ_activity.SecurityProtectActivity;
 import com.example.duan.duan.DCZ_activity.SettingActivity;
 import com.example.duan.duan.DCZ_activity.SettingPasswordActivity;
-import com.example.duan.duan.DCZ_adapter.NewsAdapter;
 import com.example.duan.duan.DCZ_bean.NewsBean;
 import com.example.duan.duan.DCZ_util.DialogUtil;
 import com.example.duan.duan.DCZ_util.HttpServiceClient;
@@ -48,7 +47,6 @@ public class AFragment extends Fragment {
     private AFragment INSTANCE;
     private int pageNumber=1;
     private int pageSize=5;
-    NewsAdapter adapter;
     private AnimationDrawable animationDrawable;
     @BindView(R.id.listview)
     XRecyclerView lv;

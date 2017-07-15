@@ -8,19 +8,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/bg_title"/>
+        android:background="@color/bg_title2"/>
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/bg_title">
+        android:background="@color/bg_title2">
         <include
             android:id="@+id/back"
-            layout="@layout/layout_back" />
+            layout="@layout/layout_back2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="密保手机"
-            android:textColor="@color/text_title"
+            android:textColor="@color/text_title2"
             android:textSize="@dimen/title" />
         <TextView
             android:layout_width="match_parent"
@@ -38,10 +38,10 @@
         android:paddingRight="20dp">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="170dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginTop="30dp"
-            android:background="@mipmap/sao1" />
+            android:background="@mipmap/mibaophone1" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,27 +51,46 @@
             android:textColor="@color/text05"
             android:textSize="17sp" />
 
-        <TextView
-            android:id="@+id/button"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/yuanjiaolan2"
-            android:gravity="center"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:text="更换"
-            android:textColor="@color/white"
-            android:textSize="@dimen/title" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/button_hui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/yuanjiaohui"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="更换"
+                android:textColor="@color/text05"
+                android:textSize="@dimen/title" />
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/yuanjiaolan2"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="更换"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title" />
+        </RelativeLayout>
 
         <TextView
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
             android:text="如果当前手机已换号，请及时更换"
             android:textColor="@color/text06"
-            android:textSize="@dimen/text01" />
+            android:textSize="@dimen/text02" />
 
         <View
             android:layout_width="match_parent"
@@ -86,6 +105,6 @@
             android:padding="10dp"
             android:text="已换号"
             android:textColor="@color/text07"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
     </LinearLayout>
 </LinearLayout>

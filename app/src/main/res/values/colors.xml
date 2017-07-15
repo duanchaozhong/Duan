@@ -27,6 +27,7 @@
 
     <color name="alpha">#000000</color>
     <color name="text_title">#ffffff</color>
+    <color name="text_title2">#333333</color>
     <color name="text01">#333333</color>
     <color name="text02">#999999</color>
     <color name="text03">#998b7c</color>
@@ -39,6 +40,9 @@
     <color name="title">#fefefe</color>
     <color name="white">#FFFFFF</color>
     <color name="bg_title">#366cf4</color>
-    <color name="bg1">#e4e4e4</color>
-    <color name="bg2">#f4f4f4</color>
+    <color name="bg_title2">#ffffff</color>
+    <color name="bg1">#f4f4f4</color>
+    <color name="bg2">#e5e5e5</color>
+    <color name="button1">#368bf4</color>
+    <color name="button2">#01a0f3</color>
 </resources>

@@ -6,7 +6,7 @@
         android:id="@+id/rlTimeline"
         android:orientation="vertical"
         android:layout_width="30dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="30dp"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/xian1"
@@ -24,7 +24,6 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="今"
             android:layout_centerHorizontal="true"
             android:background="@drawable/yuanjiao" />
         <TextView
@@ -40,6 +39,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/rlTimeline"
         android:divider="@null"
+        android:layout_marginLeft="20dp"
         android:clickable="false"
         android:scrollbars="none">
     </com.example.duan.duan.DCZ_selft.GridViewForScrollView>
@@ -52,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/xian3"
+        android:layout_marginLeft="20dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"

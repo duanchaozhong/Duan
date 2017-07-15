@@ -70,7 +70,8 @@
         <activity android:name=".DCZ_activity.LoginLockActivity" />
         <activity android:name=".DCZ_activity.SettingActivity" />
         <activity android:name=".DCZ_activity.ChangePassword2Activity" />
-        <activity android:name=".DCZ_activity.LockActivity"></activity>
+        <activity android:name=".DCZ_activity.LockActivity" />
+        <activity android:name=".DCZ_activity.CityListActivity"></activity>
     </application>
 
 </manifest>

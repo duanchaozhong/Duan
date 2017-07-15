@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.duan.duan.DCZ_adapter.EquipmentAdapter;
-import com.example.duan.duan.DCZ_adapter.NewsAdapter;
 import com.example.duan.duan.DCZ_bean.EquipmentBean;
 import com.example.duan.duan.DCZ_bean.NewsBean;
 import com.example.duan.duan.DCZ_util.DialogUtil;

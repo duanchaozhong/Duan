@@ -44,53 +44,60 @@
         android:layout_height="0dp"
         android:layout_weight="1">
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="1.5">
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:paddingLeft="@dimen/left">
+            android:paddingLeft="@dimen/left"
+            android:paddingTop="10dp">
+
             <ImageView
                 android:id="@+id/iv1"
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_centerVertical="true"
-                android:src="@mipmap/shoushi"/>
+                android:src="@mipmap/shoushi" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/iv1"
                 android:layout_marginLeft="10dp"
-                android:textSize="@dimen/text01"
+                android:layout_toRightOf="@id/iv1"
+                android:text="手势密码"
                 android:textColor="@color/text05"
-                android:text="手势密码"/>
+                android:textSize="@dimen/text01" />
+
             <LinearLayout
                 android:id="@+id/lock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:gravity="center_vertical"
-                android:layout_centerVertical="true">
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
                 <TextView
                     android:id="@+id/tv_suo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="未开启"/>
+                    android:text="未开启" />
+
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="10dp"
-                    android:src="@mipmap/you"/>
+                    android:src="@mipmap/you" />
             </LinearLayout>
 
         </RelativeLayout>
@@ -140,91 +147,101 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:paddingLeft="@dimen/left">
+            android:paddingLeft="@dimen/left"
+            android:paddingTop="10dp">
+
             <ImageView
                 android:id="@+id/iv3"
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_centerVertical="true"
-                android:src="@mipmap/renlian"/>
+                android:src="@mipmap/renlian" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/iv3"
                 android:layout_marginLeft="10dp"
-                android:textSize="@dimen/text01"
+                android:layout_toRightOf="@id/iv3"
+                android:text="人脸密码"
                 android:textColor="@color/text05"
-                android:text="人脸密码"/>
+                android:textSize="@dimen/text01" />
+
             <com.example.duan.duan.DCZ_selft.SwitchButton
                 android:id="@+id/button3"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
                 style="@style/SwitchButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:checked="true"
+                android:textColor="@color/custom_text_state_color"
+                android:textSize="16dp"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
                 app:kswTextOff="Off"
                 app:kswTextOn="On"
-                app:kswTintColor="@color/white"
-                app:kswBackDrawable="@drawable/ios_back_drawable"
-                android:textColor="@color/custom_text_state_color"
-                android:textSize="16dp"/>
+                app:kswTintColor="@color/white" />
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:paddingLeft="@dimen/left">
+            android:paddingLeft="@dimen/left"
+            android:paddingTop="10dp">
+
             <ImageView
                 android:id="@+id/iv4"
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_centerVertical="true"
-                android:src="@mipmap/guanyu"/>
+                android:src="@mipmap/guanyu" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/iv4"
                 android:layout_marginLeft="10dp"
-                android:textSize="@dimen/text01"
+                android:layout_toRightOf="@id/iv4"
+                android:text="关于"
                 android:textColor="@color/text05"
-                android:text="关于"/>
+                android:textSize="@dimen/text01" />
+
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:layout_marginRight="10dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@mipmap/you"/>
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/you" />
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:paddingLeft="@dimen/left">
+            android:paddingLeft="@dimen/left"
+            android:paddingTop="10dp">
+
             <ImageView
                 android:id="@+id/iv5"
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_centerVertical="true"
-                android:src="@mipmap/tuichu"/>
+                android:src="@mipmap/tuichu" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/iv5"
                 android:layout_marginLeft="10dp"
-                android:textSize="@dimen/text01"
+                android:layout_toRightOf="@id/iv5"
+                android:text="退出当前账户"
                 android:textColor="@color/text05"
-                android:text="退出当前账户"/>
+                android:textSize="@dimen/text01" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

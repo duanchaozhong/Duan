@@ -1,42 +1,32 @@
 package com.example.duan.duan.DCZ_activity;
 
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
 import com.example.duan.duan.R;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
- *  一键授权
+ *      选择国家和地区
  *
  * */
-public class HaveActivity extends BaseActivity {
-    private HaveActivity INSTANCE;
+public class CityListActivity extends BaseActivity {
     @BindView(R.id.back)
     View back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_have);
-        ButterKnife.bind(this);
-        INSTANCE=this;
+        setContentView(R.layout.activity_city_list);
         setViews();
         setListener();
     }
 
-    /**
-     *  数据初始化
-     * */
     private void setViews() {
 
     }
-    /**
-     * 监听
-     *
-     * */
+
     private void setListener() {
         back.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg1"
     tools:context="com.example.duan.duan.DCZ_activity.LockActivity">
     <TextView
         android:layout_width="match_parent"

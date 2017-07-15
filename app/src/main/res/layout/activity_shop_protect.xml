@@ -2,27 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg2"
+    android:background="@color/bg1"
     tools:context="com.example.duan.duan.DCZ_activity.ShopProtectActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/bg_title"/>
+        android:background="@color/bg_title2"/>
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/bg_title">
+        android:background="@color/bg_title2">
         <include
             android:id="@+id/back"
-            layout="@layout/layout_back" />
+            layout="@layout/layout_back2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="商城保护"
-            android:textColor="@color/text_title"
+            android:textColor="@color/text_title2"
             android:textSize="@dimen/title" />
         <TextView
             android:layout_width="match_parent"
@@ -44,14 +45,19 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingLeft="@dimen/left">
-        <ImageView
-            android:id="@+id/iv1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/t0r"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            fresco:placeholderImage="@mipmap/zhanwei"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"/>
         <TextView
-            android:layout_toRightOf="@id/iv1"
+            android:layout_toRightOf="@id/sdv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -82,17 +88,22 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingLeft="@dimen/left">
-        <ImageView
-            android:id="@+id/iv2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/t0r"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            fresco:placeholderImage="@mipmap/zhanwei"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/iv2"
+            android:layout_toRightOf="@id/sdv2"
             android:layout_marginLeft="10dp"
             android:textSize="@dimen/text01"
             android:textColor="@color/text05"

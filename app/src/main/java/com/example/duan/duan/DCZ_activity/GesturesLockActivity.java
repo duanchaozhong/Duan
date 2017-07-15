@@ -35,7 +35,7 @@ public class GesturesLockActivity extends BaseActivity {
     private int times=0;
     private int[] mIndexs=null;
     @BindView(R.id.back)
-    ImageView back;
+    View back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

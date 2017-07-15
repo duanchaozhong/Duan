@@ -9,24 +9,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="@color/white"/>
+        android:background="@color/bg_title2"/>
     <RelativeLayout
         style="@style/Title"
-        android:background="@color/white">
-        <ImageView
+        android:background="@color/bg_title2">
+        <include
             android:id="@+id/back"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@mipmap/zuo_hei"
-            android:layout_centerVertical="true"
-            android:scaleType="fitCenter"
-            android:layout_marginLeft="20dp"/>
+            layout="@layout/layout_back2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="手势锁"
-            android:textColor="@color/text05"
+            android:text="指纹锁"
+            android:textColor="@color/text_title2"
             android:textSize="@dimen/title" />
         <TextView
             android:layout_width="match_parent"
