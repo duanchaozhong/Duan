@@ -51,16 +51,16 @@
             android:id="@+id/sdv1"
             android:layout_width="35dp"
             android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/button1"
             fresco:placeholderImage="@mipmap/zhanwei"
             fresco:placeholderImageScaleType="fitCenter"
-            fresco:roundedCornerRadius="5dp"
-            fresco:roundTopLeft="true"
-            fresco:roundTopRight="true"
             fresco:roundBottomLeft="true"
             fresco:roundBottomRight="true"
-            android:layout_alignTop="@+id/button1"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -83,8 +83,8 @@
             android:textColor="@color/custom_text_state_color"
             android:textSize="16dp"
             app:kswBackDrawable="@drawable/ios_back_drawable"
-            app:kswTextOff="Off"
-            app:kswTextOn="On"
+            app:kswTextOff="off"
+            app:kswTextOn="on"
             app:kswTintColor="@color/white" />
     </RelativeLayout>
 
@@ -124,8 +124,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            app:kswTextOff="Off"
-            app:kswTextOn="On"
+            app:kswTextOff="off"
+            app:kswTextOn="on"
             app:kswTintColor="@color/white"
             app:kswBackDrawable="@drawable/ios_back_drawable"
             android:textColor="@color/custom_text_state_color"
