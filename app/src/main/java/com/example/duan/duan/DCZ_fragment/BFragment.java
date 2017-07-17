@@ -151,13 +151,7 @@ public class BFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        number4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), FaceKnowActivity.class);
-                startActivity(intent);
-            }
-        });
+
         /**
          *  扫码
          * */

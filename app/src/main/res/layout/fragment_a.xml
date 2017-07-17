@@ -13,12 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
+        android:layout_weight="1"
         android:background="#386df7"
-        android:layout_weight="1">
+        android:orientation="vertical">
 
         <RelativeLayout
             style="@style/Title"
@@ -28,10 +29,10 @@
                 android:id="@+id/back"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@mipmap/shezhi_bai"
                 android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
                 android:scaleType="fitCenter"
-                android:layout_marginLeft="20dp"/>
+                android:src="@mipmap/shezhi_bai" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -52,43 +53,51 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp">
+            android:layout_height="match_parent">
+
             <ImageView
                 android:id="@+id/iv"
-                android:background="@mipmap/sao1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/sao1" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:visibility="invisible"
-                    android:background="#333333"/>
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#333333"
+                    android:visibility="invisible" />
+
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
-                </View>
+                    android:layout_height="30dp"></View>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="ru****hua@qq.com"/>
+                    android:text="ru****hua@qq.com"
+                    android:textColor="@color/white" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
                     android:layout_marginTop="3dp"
-                    android:textSize="17sp"
-                    android:text="正在检测中...."/>
+                    android:text="正在检测中...."
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

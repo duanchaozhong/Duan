@@ -63,7 +63,7 @@ public class EquipmentManageActivity extends BaseActivity {
             lv.setLayoutManager(linearLayoutManager);
             lv.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);
             lv.setLoadingMoreProgressStyle(ProgressStyle.BallRotate);
-            lv.setArrowImageView(R.mipmap.ic_launcher);
+            lv.setArrowImageView(R.mipmap.xiala);
             //lv.addItemDecoration(new SpacesItemDecoration(20));
             adapter=new EquipmentAdapter(INSTANCE,list);
             lv.setAdapter(adapter);
