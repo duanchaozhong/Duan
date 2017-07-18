@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 
@@ -13,6 +14,7 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 
 public class MyApplication extends Application{
     private static Context context;
+    public static boolean first=true;//是否为第一次登录
     public static Boolean suo=true;
     public static String qiniu="https://pic.bincrea.com/";
     //偏好设置
@@ -23,6 +25,8 @@ public class MyApplication extends Application{
         context=getApplicationContext();
         Fresco.initialize(this);
         sf= PreferenceManager.getDefaultSharedPreferences(this);
+        first = sf.getBoolean("first",true);
+        Log.i("dcz_first",first+"");
     }
     public static Context getContext(){
         return context;

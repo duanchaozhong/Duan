@@ -31,8 +31,13 @@ public class AppStartActivity extends Activity {
             startActivity(intent);
             finish();
         }else {
-            Intent intent = new Intent(AppStartActivity.this, MainActivity.class);
-            startActivity(intent);
+            if(MyApplication.first){
+                Intent intent = new Intent(AppStartActivity.this, WelcomeActivity.class);
+                startActivity(intent);
+            }else {
+                Intent intent = new Intent(AppStartActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
             finish();
         }
     }

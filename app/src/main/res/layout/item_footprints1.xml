@@ -4,69 +4,77 @@
     android:layout_width="match_parent"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:gravity="center_vertical"
+            android:paddingBottom="15dp"
             android:paddingLeft="@dimen/left"
             android:paddingRight="@dimen/right"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp">
+            android:paddingTop="15dp">
+
             <com.facebook.drawee.view.SimpleDraweeView
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 fresco:placeholderImage="@mipmap/zhanwei"
                 fresco:placeholderImageScaleType="fitCenter"
-                fresco:roundedCornerRadius="5dp"
+                fresco:roundBottomLeft="true"
+                fresco:roundBottomRight="true"
                 fresco:roundTopLeft="true"
                 fresco:roundTopRight="true"
-                fresco:roundBottomLeft="true"
-                fresco:roundBottomRight="true"/>
+                fresco:roundedCornerRadius="5dp" />
+
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_height="wrap_content">
+                android:layout_weight="1"
+                android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/tv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="钱包登录"
-                    android:textSize="@dimen/text01"
-                    android:textColor="@color/text05"/>
+                    android:textColor="@color/text05"
+                    android:textSize="@dimen/text01" />
+
                 <TextView
                     android:id="@+id/tv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="360浏览器"
                     android:layout_marginTop="2dp"
-                    android:textSize="@dimen/text02"
-                    android:textColor="@color/text06"/>
+                    android:text="360浏览器"
+                    android:textColor="@color/text06"
+                    android:textSize="@dimen/text02" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:background="@drawable/select2"
                 android:layout_gravity="center_vertical"
+                android:background="@drawable/select2"
+                android:clickable="true"
+                android:paddingBottom="7dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:paddingTop="7dp"
-                android:paddingBottom="7dp"
-                android:textSize="@dimen/text01"
+                android:text="下线"
                 android:textColor="@drawable/text_select"
-                android:text="下线"/>
+                android:textSize="@dimen/text01" />
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/xian"
-            android:background="@color/bg1"/>
+            android:background="@color/bg1" />
     </LinearLayout>
 </LinearLayout>

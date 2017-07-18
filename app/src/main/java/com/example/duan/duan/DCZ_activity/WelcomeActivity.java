@@ -15,9 +15,11 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
 import com.example.duan.duan.DCZ_adapter.ViewPagerApdater;
+import com.example.duan.duan.DCZ_application.MyApplication;
 import com.example.duan.duan.DCZ_util.DisplayUtil;
 import com.example.duan.duan.MainActivity;
 import com.example.duan.duan.R;
@@ -27,7 +29,7 @@ import java.util.List;
 
 public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
     //引导图片资源
-    private static final int[] pics = {R.mipmap.bg01,R.mipmap.bg01,R.mipmap.bg01, R.mipmap.bg01,};
+    private static final int[] pics = {R.mipmap.welcome1,R.mipmap.welcome2,R.mipmap.welcome3, R.mipmap.welcome4,};
     //底部小点图片
     private ImageView[] dots;
     //记录当前选中位置
@@ -38,7 +40,7 @@ public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageCha
 
     private RelativeLayout zong;
     private LinearLayout pointContainer;
-    private ImageView tv;
+    private TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +51,7 @@ public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageCha
 
     private void setViews() {
         views = new ArrayList<>();
-        tv = (ImageView) findViewById(R.id.welcome_tv);//得到图片控件
+        tv = (TextView) findViewById(R.id.welcome_tv);//得到图片控件
         zong = (RelativeLayout) findViewById(R.id.welcome_Rl);
         pointContainer = (LinearLayout) findViewById(R.id.ll_viewpage_image);
         viewPager = (ViewPager) findViewById(R.id.welcome_viewpager);//初始化ViewPager对象
@@ -103,6 +105,8 @@ public class WelcomeActivity extends BaseActivity implements ViewPager.OnPageCha
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {//给图片控件设置点击监听
+                MyApplication.sf.edit().putBoolean("first",false).commit();//从全局变量里用偏好设置来编辑并提交
+                MyApplication.first=false;
                 Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
                 startActivity(intent);           //跳转到登录页面
                 finish();                       //关闭
